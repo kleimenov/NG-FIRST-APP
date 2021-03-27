@@ -14,6 +14,7 @@ import { CardComponent } from './card/card.component';
   ],
   providers: [],
   bootstrap: [
-    AppComponent],
+    AppComponent
+  ],
 })
 export class AppModule {}
