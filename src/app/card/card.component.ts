@@ -1,3 +1,11 @@
 import { Component } from '@angular/core';
 
-export class CardComponent {}
+
+@Component({
+    selector: 'app-card',
+    templateUrl: './card.component.html'
+})
+
+export class CardComponent {
+
+}
