@@ -6,13 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent {
-  title = "My title"
-  number = 777
+  //create some variables
+  title = 'My title';
+  number = 777;
   obj = {
-    name: "ivan",
+    name: 'ivan',
     info: {
-      county: "Canada",
-      job: "Developer"
-    }
+      county: 'Canada',
+      job: 'Developer',
+    },
+  };
+
+  //create some methods
+  getInfo() {
+    return 'test object (func notation)';
   }
+
+  getInfo2 = () => {
+    return 'test object (arrow func notation)';
+  };
 }
