@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
   //create some variables
-  title:string = 'My title';
+  title: string = 'My title';
   number = 777;
-  obj:object = {
+  obj: object = {
     name: 'ivan',
     info: {
       county: 'Canada',
@@ -17,22 +17,26 @@ export class CardComponent implements OnInit {
     },
   };
 
-  imgUrl = 'https://angular.io/assets/images/logos/angular/angular.png'
+  imgUrl = 'https://angular.io/assets/images/logos/angular/angular.png';
 
-  disabled:boolean = false
+  disabled: boolean = false;
 
   changeTitle() {
-    this.title = "Oh lalala...."
+    this.title = 'Oh lalala....';
+  }
+
+  inputHandler(event: any) {
+    const value = event.target.value
+    this.title = value
   }
 
   ngOnInit() {
     setTimeout(() => {
-      this.imgUrl = 'https://angular.io/generated/images/marketing/concept-icons/material.png'
-      this.disabled = true
-    }, 3000)
+      this.imgUrl =
+        'https://angular.io/generated/images/marketing/concept-icons/material.png';
+      this.disabled = true;
+    }, 3000);
   }
-
-  
 
   //create some methods
   getInfo() {

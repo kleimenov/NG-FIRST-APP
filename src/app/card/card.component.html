@@ -18,10 +18,18 @@
     </li>
   </ul>
   <div>
-    <!-- <img src="{{ imgUrl }}" /> --> <!--it works for Angular V 6+ -->
-    <img [src]="imgUrl" /> <!-- I use binding -->
+    <!-- <img src="{{ imgUrl }}" /> -->
+    <!--it works for Angular V 6+ -->
+    <img [src]="imgUrl" />
+    <!-- I use binding -->
     <button [disabled]="disabled">Enable</button>
   </div>
-  <button (click)="changeTitle()">Change title</button>
-  <button (click)="title='Inline title'">Change title inline</button>
+  <div>
+    <button (click)="changeTitle()">Change title</button>
+    <button (click)="title = 'Inline title'">Change title inline</button>
+  </div>
+  <div>
+    <input type="text" (input)="inputHandler($event)" [value]="title">
+    <button>Add title</button>
+  </div>
 </div>
