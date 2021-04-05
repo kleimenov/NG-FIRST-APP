@@ -7,15 +7,17 @@ import { Component } from '@angular/core';
 })
 export class CardComponent {
   //create some variables
-  title = 'My title';
+  title:string = 'My title';
   number = 777;
-  obj = {
+  obj:object = {
     name: 'ivan',
     info: {
       county: 'Canada',
       job: 'Developer',
     },
   };
+
+  imgUrl = 'https://angular.io/assets/images/logos/angular/angular.png'
 
   //create some methods
   getInfo() {
