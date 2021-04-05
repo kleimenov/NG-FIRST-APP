@@ -5,4 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss'],
 })
-export class CardComponent {}
+export class CardComponent {
+  title = "My title"
+  number = 777
+}
