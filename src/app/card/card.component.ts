@@ -22,7 +22,7 @@ export class CardComponent implements OnInit {
   ngOnInit() {
     setTimeout(() => {
       this.imgUrl = 'https://angular.io/generated/images/marketing/concept-icons/material.png'
-    }, 5000)
+    }, 2000)
   }
 
   //create some methods
