@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 export class CardComponent {
   title = "My title"
   number = 777
+  obj = {
+    name: "ivan",
+    info: {
+      county: "Canada",
+      job: "Developer"
+    }
+  }
 }
