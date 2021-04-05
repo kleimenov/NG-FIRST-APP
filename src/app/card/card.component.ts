@@ -19,11 +19,16 @@ export class CardComponent implements OnInit {
 
   imgUrl = 'https://angular.io/assets/images/logos/angular/angular.png'
 
+  disabled:boolean = false
+
   ngOnInit() {
     setTimeout(() => {
       this.imgUrl = 'https://angular.io/generated/images/marketing/concept-icons/material.png'
-    }, 2000)
+      this.disabled = true
+    }, 3000)
   }
+
+  
 
   //create some methods
   getInfo() {
