@@ -18,6 +18,7 @@
     </li>
   </ul>
   <div>
-    <img src="{{ imgUrl }}" />
+    <!-- <img src="{{ imgUrl }}" /> --> <!--it works for Angular V 6+ -->
+    <img [src]="imgUrl" /> <!-- I use binding -->
   </div>
 </div>
