@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss'],
 })
-export class CardComponent {
+export class CardComponent implements OnInit {
   //create some variables
   title:string = 'My title';
   number = 777;
@@ -18,6 +18,12 @@ export class CardComponent {
   };
 
   imgUrl = 'https://angular.io/assets/images/logos/angular/angular.png'
+
+  ngOnInit() {
+    setTimeout(() => {
+      this.imgUrl = 'https://angular.io/generated/images/marketing/concept-icons/material.png'
+    }, 5000)
+  }
 
   //create some methods
   getInfo() {
