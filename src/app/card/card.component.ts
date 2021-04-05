@@ -21,6 +21,10 @@ export class CardComponent implements OnInit {
 
   disabled:boolean = false
 
+  changeTitle() {
+    this.title = "Oh lalala...."
+  }
+
   ngOnInit() {
     setTimeout(() => {
       this.imgUrl = 'https://angular.io/generated/images/marketing/concept-icons/material.png'
